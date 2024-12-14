@@ -15,27 +15,21 @@ const Card = () => {
             and uninviting. I’ve got some simple tips to help you make any room feel complete.
           </p>
         </header>
-        <footer className="card__footer">
-          <div className="card__author">
+        <footer className={styles.footer}>
+          <div className={styles.author}>
             <img
               src="./src/assets/images/avatar-michelle.jpg"
               alt="Michelle Appleton"
-              className="card__author-image"
+              className={styles["author-image"]}
             />
-            <hgroup className="card__author-info">
-              <h2 className="card__author-name">Michelle Appleton</h2>
-              <h3 className="card__author-date">28 Jun 2020</h3>
+            <hgroup className={styles["author-info"]}>
+              <h2 className={styles["author-name"]}>Michelle Appleton</h2>
+              <h3 className={styles["author-date"]}>28 Jun 2020</h3>
             </hgroup>
           </div>
-          <div className="card__share">
-            <button className="card__share-button">
-              <img
-                src="./src/assets/images/icon-share.svg"
-                alt="share"
-                className="card__share-icon"
-              />
-            </button>
-          </div>
+          <button className={styles["share-button"]}>
+            <img src="./src/assets/images/icon-share.svg" alt="share" />
+          </button>
         </footer>
       </div>
     </article>

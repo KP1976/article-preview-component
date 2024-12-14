@@ -1,6 +1,6 @@
 .card {
   align-items: center;
-  border-radius: var(--border-radius-8);
+  border-radius: var(--border-radius-8) var(--border-radius-8);
   display: flex;
   flex-direction: column;
   box-shadow: 0 2rem 4rem hsla(212, 23%, 69%, 0.4);
@@ -14,6 +14,8 @@
 }
 
 .content {
+  background-color: var(--white);
+  border-radius: 0 0 var(--border-radius-8) var(--border-radius-8);
   display: flex;
   flex-direction: column;
   padding: var(--space-36) var(--space-32) var(--space-20);
@@ -40,4 +42,51 @@
   font-weight: 500;
   letter-spacing: var(--letter-spacing-0_1);
   line-height: 1.55;
+}
+
+.footer,
+.author {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.author {
+  gap: 0 var(--space-16);
+}
+
+.author-image {
+  border-radius: 50%;
+  height: 2.5rem;
+  object-fit: cover;
+  width: 2.5rem;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.author-name {
+  color: var(--desaturated-dark-blue);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-0_1);
+  line-height: var(--line-height-100);
+}
+
+.author-date {
+  color: var(--grayish-blue);
+  font-weight: 700;
+  line-height: var(--line-height-100);
+}
+
+.share-button {
+  align-items: center;
+  background-color: var(--light-grayish-blue);
+  border-radius: 50%;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
 }
