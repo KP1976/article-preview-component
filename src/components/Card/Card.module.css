@@ -20,3 +20,24 @@
   gap: var(--space-32) 0;
   text-align: left;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12) 0;
+}
+
+.header-title {
+  color: var(--very-dark-grayish-blue);
+  font-size: var(--font-size-16);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-0_2);
+  line-height: 1.4;
+}
+
+.header-text {
+  color: var(--grayish-blue);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-0_1);
+  line-height: 1.55;
+}

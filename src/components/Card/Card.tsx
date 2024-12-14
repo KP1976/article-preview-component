@@ -5,12 +5,12 @@ const Card = () => {
     <article className={styles.card}>
       <img src="./src/assets/images/drawers.jpg" alt="image-header" className={styles.image} />
       <div className={styles.content}>
-        <header className="card__header">
-          <h1 className="card__header-title">
+        <header className={styles.header}>
+          <h1 className={styles["header-title"]}>
             Shift the overall look and feel by adding these wonderful touches to furniture in your
             home
           </h1>
-          <p className="card__header-text">
+          <p className={styles["header-text"]}>
             Ever been in a room and felt like something was missing? Perhaps it felt slightly bare
             and uninviting. I’ve got some simple tips to help you make any room feel complete.
           </p>
