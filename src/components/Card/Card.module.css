@@ -1,0 +1,22 @@
+.card {
+  align-items: center;
+  border-radius: var(--border-radius-8);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2rem 4rem hsla(212, 23%, 69%, 0.4);
+}
+
+.image {
+  border-radius: var(--border-radius-8) var(--border-radius-8) 0 0;
+  height: 12.5rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-36) var(--space-32) var(--space-20);
+  gap: var(--space-32) 0;
+  text-align: left;
+}

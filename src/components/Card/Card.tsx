@@ -1,8 +1,10 @@
+import styles from "./Card.module.css";
+
 const Card = () => {
   return (
-    <article className="card">
-      <img src="./src/assets/images/drawers.jpg" alt="image-header" className="card__image" />
-      <div className="card__content">
+    <article className={styles.card}>
+      <img src="./src/assets/images/drawers.jpg" alt="image-header" className={styles.image} />
+      <div className={styles.content}>
         <header className="card__header">
           <h1 className="card__header-title">
             Shift the overall look and feel by adding these wonderful touches to furniture in your
