@@ -1,14 +1,14 @@
 .card {
   align-items: center;
   border-radius: var(--border-radius-8) var(--border-radius-8);
+  box-shadow: 0 2rem 4rem hsla(212, 23%, 69%, 0.4);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2rem 4rem hsla(212, 23%, 69%, 0.4);
 }
 
 .image {
   border-radius: var(--border-radius-8) var(--border-radius-8) 0 0;
-  height: 12.5rem;
+  height: clamp(10rem, 54.5vw, 18rem);
   object-fit: cover;
   width: 100%;
 }
@@ -18,8 +18,8 @@
   border-radius: 0 0 var(--border-radius-8) var(--border-radius-8);
   display: flex;
   flex-direction: column;
-  padding: var(--space-36) var(--space-32) var(--space-20);
   gap: var(--space-32) 0;
+  padding: var(--space-36) var(--space-32) var(--space-20);
   text-align: left;
 }
 
@@ -89,4 +89,36 @@
   height: 2rem;
   justify-content: center;
   width: 2rem;
+}
+
+@media screen and (min-width: 48.75em) {
+  .card {
+    display: grid;
+    grid-template-columns: 17.875rem 27.875rem;
+    max-width: 45.75rem;
+    overflow: hidden;
+  }
+
+  .image {
+    border-radius: var(--border-radius-8) 0 0 var(--border-radius-8);
+    height: 100%;
+    object-position: -10px;
+  }
+
+  .content {
+    border-radius: 0 var(--border-radius-8) var(--border-radius-8) 0;
+    gap: var(--space-20) 0;
+    padding: var(--space-32) var(--space-40) var(--space-32) var(--space-32);
+  }
+
+  .header-title {
+    font-size: var(--font-size-20);
+  }
+
+  .header-text {
+    color: var(--grayish-blue);
+    font-weight: 500;
+    letter-spacing: var(--letter-spacing-0_1);
+    line-height: 1.55;
+  }
 }
