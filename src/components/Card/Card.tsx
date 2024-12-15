@@ -1,7 +1,7 @@
 import styles from "./Card.module.css";
-import drawerImage from "src/assets/images/drawers.jpg";
-import avatar from "src/assets/images/avatar-michelle.jpg";
-import shareIcon from "src/assets/images/icon-share.svg";
+import drawerImage from "../../assets/images/drawers.jpg";
+import avatar from "../../assets/images/avatar-michelle.jpg";
+import shareIcon from "../../assets/images/icon-share.svg";
 
 const Card = () => {
   return (
