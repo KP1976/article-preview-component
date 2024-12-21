@@ -4,6 +4,7 @@
   box-shadow: 0 2rem 4rem hsla(212, 23%, 69%, 0.4);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .image {
@@ -89,6 +90,10 @@
   height: 2rem;
   justify-content: center;
   width: 2rem;
+}
+
+.share-button__icon {
+  fill: var(--desaturated-dark-blue);
 }
 
 @media screen and (min-width: 48.75em) {
