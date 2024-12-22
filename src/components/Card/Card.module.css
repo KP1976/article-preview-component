@@ -83,21 +83,6 @@
   line-height: var(--line-height-100);
 }
 
-.share-button {
-  align-items: center;
-  background-color: var(--light-grayish-blue);
-  border-radius: 50%;
-  display: flex;
-  height: 2rem;
-  justify-content: center;
-  cursor: pointer;
-  width: 2rem;
-}
-
-.share-button__icon {
-  fill: var(--desaturated-dark-blue);
-}
-
 @media screen and (min-width: 45.75rem) {
   .card {
     display: grid;
@@ -125,14 +110,6 @@
     font-weight: 500;
     letter-spacing: var(--letter-spacing-0_1);
     line-height: 1.55;
-  }
-
-  .share-button {
-    background-color: var(--very-dark-grayish-blue);
-  }
-
-  .share-button__icon {
-    fill: var(--white);
   }
 }
 
