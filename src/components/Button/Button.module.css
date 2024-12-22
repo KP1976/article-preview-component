@@ -2,7 +2,7 @@
   align-items: center;
   background-color: var(--light-grayish-blue);
   border-radius: 50%;
-  bottom: 1rem;
+  bottom: 1.5rem;
   cursor: pointer;
   display: flex;
   height: 2rem;
@@ -17,14 +17,18 @@
   fill: var(--desaturated-dark-blue);
 }
 
+.active {
+  background-color: var(--desaturated-dark-blue);
+  bottom: 1rem;
+}
+
+.active2 {
+  fill: var(--white);
+}
+
 @media screen and (min-width: 45.75rem) {
   .share-button {
-    /* background-color: var(--desaturated-dark-blue); */
     bottom: 2.25rem;
     right: 2.5rem;
   }
-
-  /* .share-button__icon {
-    fill: var(--white);
-  } */
 }

@@ -1,10 +1,18 @@
 import styles from "./Button.module.css";
 
-const Button = () => {
+interface ButtonProps {
+  onClick: () => void;
+  clicked: boolean;
+}
+
+const Button: React.FC<ButtonProps> = ({ onClick, clicked }) => {
   return (
-    <button className={styles["share-button"]}>
+    <button
+      className={`${styles["share-button"]} ${clicked ? styles.active : ""}`}
+      onClick={onClick}
+    >
       <svg
-        className={styles["share-button__icon"]}
+        className={`${styles["share-button__icon"]} ${clicked ? styles.active2 : ""}`}
         xmlns="http://www.w3.org/2000/svg"
         width="15"
         height="13"

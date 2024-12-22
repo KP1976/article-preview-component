@@ -61,7 +61,7 @@
 @media screen and (min-width: 45.75rem) {
   .social-media {
     border-radius: var(--border-radius-8);
-    box-shadow: 0 2rem 4rem hsla(212, 23%, 69%, 0.4);
+    box-shadow: 0 0.5rem 1rem hsla(212, 23%, 69%, 0.4);
     height: 3.438rem;
     left: calc(100% - 248px + 67px);
     bottom: 93px;

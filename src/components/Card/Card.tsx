@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./Card.module.css";
 import drawerImage from "../../assets/images/drawers.jpg";
 import avatar from "../../assets/images/avatar-michelle.jpg";
@@ -5,6 +6,12 @@ import SocialMedia from "../SocialMedia/SocialMedia";
 import Button from "../Button/Button";
 
 const Card = () => {
+  const [showSocialMedia, setShowSocialMedia] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowSocialMedia(!showSocialMedia);
+  };
+
   return (
     <article className={styles.card}>
       <img src={drawerImage} alt="image-header" className={styles.image} />
@@ -27,9 +34,9 @@ const Card = () => {
               <h3 className={styles["author-date"]}>28 Jun 2020</h3>
             </hgroup>
           </div>
-          <Button />
+          <Button onClick={handleButtonClick} clicked={showSocialMedia} />
         </footer>
-        <SocialMedia />
+        {showSocialMedia && <SocialMedia />}
       </div>
     </article>
   );
