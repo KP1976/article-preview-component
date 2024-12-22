@@ -10,6 +10,7 @@ const Button: React.FC<ButtonProps> = ({ onClick, clicked }) => {
     <button
       className={`${styles["share-button"]} ${clicked ? styles.active : ""}`}
       onClick={onClick}
+      aria-label="Share"
     >
       <svg
         className={`${styles["share-button__icon"]} ${clicked ? styles.active2 : ""}`}
